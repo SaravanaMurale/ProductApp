@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--Name-->
+            <RelativeLayout
+                android:id="@+id/nameBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tvItemName"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <!--Category-->
+            <RelativeLayout
+                android:id="@+id/categoryBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameBlock"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/itemCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catetory:"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvProductCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/itemCategory"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+            <!--Price-->
+            <RelativeLayout
+                android:id="@+id/priceBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoryBlock"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price:"
+                    android:textColor="@color/black"
+                    />
+
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvItemPrice"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <!--Tax-->
+            <RelativeLayout
+                android:id="@+id/taxBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceBlock"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvItemTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax:"
+                    android:textColor="@color/black"
+                    />
+
+            <TextView
+                android:id="@+id/tvTaAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvItemTax"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <!--Total-->
+            <RelativeLayout
+                android:id="@+id/totalAmountBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taxBlock"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvItemTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:textColor="@color/black"
+                    />
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvItemTotal"
+                android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
